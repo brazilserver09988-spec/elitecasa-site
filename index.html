@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Casa - Men's Wear Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elite Casa</div>
+        <input type="text" id="search" placeholder="Search men's wear...">
+        <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </header>
+    <nav>
+        <button id="filter-size">Filter by Size</button>
+        <button id="filter-price">Filter by Price</button>
+    </nav>
+    <main id="products">
+        <!-- Products will be loaded here via JS -->
+    </main>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
